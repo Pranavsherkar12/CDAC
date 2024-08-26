@@ -9,9 +9,6 @@ public class positive{
 	System.out.println("Number is postive");	
 	}
 
-	else{
-	System.out.println("Number is not postive");	
-	}
 	
     }
 
