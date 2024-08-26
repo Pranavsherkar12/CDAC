@@ -10,7 +10,7 @@ public class prime{
 		
 		for(int i = 1;i<=11;i++){
 			
-			if(i%2 == 0 ){ 					//Pendingggg
+			if(i%2 == 0 ){ 					
 			
 			continue;
 			
