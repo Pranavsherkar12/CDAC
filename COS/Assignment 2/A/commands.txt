@@ -1,0 +1,62 @@
+1.echo "Hello, World!":
+Prints the text "Hello, World!" to the terminal.
+
+2.name="Productive":
+Assigns the value "Productive" to the variable name.
+
+3.touch file.txt:
+Creates an empty file named file.txt if it doesn't already exist. If it does exist, it updates the file's timestamp.
+
+4.ls -a:
+Lists all files and directories in the current directory, including hidden files (those starting with a dot .).
+
+5.rm file.txt:
+Removes (deletes) the file named file.txt.
+
+6.cp file1.txt file2.txt:
+Copies the contents of file1.txt to a new file named file2.txt. If file2.txt exists, it will be overwritten.
+
+7.mv file.txt /path/to/directory/:
+Moves the file file.txt to the specified directory /path/to/directory/.
+
+8.chmod 755 script.sh:
+Changes the permissions of the file script.sh to 755. This means the owner can read, write, and execute (7), and others can read and execute (5).
+
+9.grep "pattern" file.txt:
+Searches for the string "pattern" in file.txt and displays lines that contain the pattern.
+
+10.kill PID:
+Sends a termination signal to the process with the specified Process ID (PID), effectively stopping it.
+
+11.mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt:
+Creates a directory named mydir, changes into that directory, creates an empty file named file.txt, writes "Hello, World!" into file.txt, and finally displays the contents of file.txt.
+
+12.ls -l | grep ".txt":
+Lists files in the current directory in long format (-l) and filters the results to show only files with a .txt extension.
+
+13.cat file1.txt file2.txt | sort | uniq:
+Concatenates the contents of file1.txt and file2.txt, sorts the combined output, and filters out duplicate lines.
+
+14.ls -l | grep "^d":
+Lists files in the current directory in long format (-l) and filters the results to show only directories (indicated by d at the beginning of the line).
+
+15.grep -r "pattern" /path/to/directory/:
+Recursively searches for the string "pattern" in all files within /path/to/directory/ and its subdirectories.
+
+16.cat file1.txt file2.txt | sort | uniq -d:
+Concatenates the contents of file1.txt and file2.txt, sorts the combined output, and displays only duplicate lines.
+
+17.chmod 644 file.txt:
+Changes the permissions of the file file.txt to 644. This means the owner can read and write (6), and others can only read (4).
+
+18.cp -r source_directory destination_directory:
+Recursively copies the source_directory and all its contents to destination_directory.
+
+19.find /path/to/search -name "*.txt":
+Searches for files with a .txt extension within /path/to/search and its subdirectories.
+
+20.chmod u+x file.txt:
+Adds execute permission for the file's owner (u) on file.txt.
+
+21echo $PATH:
+Displays the contents of the PATH environment variable, which lists directories that the shell searches for executable files.
