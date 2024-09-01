@@ -1,0 +1,11 @@
+
+1. ls is used to list files and directories in a directory. - True
+2. mv is used to move files and directories.  - True
+3. cd is used to copy files and directories.  - False
+4. pwd stands for "print working directory" and displays the current directory. - True 
+5. grep is used to search for patterns in files. - True
+6. chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute - True
+permissions to group and others.  - True
+7. mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1 
+if directory1 does not exist.  - True
+8. rm -rf file.txt deletes a file forcefully without confirmation. - True
