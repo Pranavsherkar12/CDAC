@@ -1,0 +1,8 @@
+  GNU nano 6.2                                                           8.sh                                                                     if [ -f "file.txt" ]
+then
+        echo "file exist"
+else
+        echo "not exist"
+fi
+
+
