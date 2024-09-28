@@ -16,6 +16,9 @@ public class Program10 {
 		System.out.println(isleap(n));
 	}
 }
+//Time complexity:O(n)
+//Space complexity:O(1)
+
 //Alternative way:
 /*
 if (year % 4 == 0) {
