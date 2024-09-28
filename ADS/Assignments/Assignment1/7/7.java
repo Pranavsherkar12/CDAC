@@ -11,12 +11,10 @@ public class Program7 {
 		// yes:then it will increment by counting its count and then by 1
 		// no:incremnent its count by 1
 		for (int i = 0; i < str.length(); i++) {
-
 			char currchar = str.charAt(i);
-
+			
 			if (count.containsKey(currchar))
 				count.put(currchar, count.get(currchar) + 1);
-
 			else
 				count.put(currchar, 1);
 		}
@@ -30,22 +28,16 @@ public class Program7 {
 		// This loop iterates over each key-value pair in the HashMap count and
 		// checks if any character has a frequency greater than 1 If so, it adds the character in the list .
 		for (Map.Entry<Character, Integer> element : count.entrySet()) {
-
 			if (element.getValue() > 1)
 				li.add(element.getKey());
-
 		}
-
 		return li;
 	}
 
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-
 		System.out.println("Enter the string");
 		String name = sc.nextLine();
-
 		dupli(name);
 	}
 
