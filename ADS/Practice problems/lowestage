@@ -1,0 +1,27 @@
+package org.prgm;
+
+import java.util.*;
+//Lowest age finder
+public class Program1 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter");
+		int n = sc.nextInt();
+		int[] age = new int[n];
+
+		for(int i=0;i<age.length;i++) {
+			age[i] = sc.nextInt();
+		}
+		int lowestage = age[0];
+
+		for (int currage : age) {
+			if (currage < lowestage) {
+				lowestage = currage;
+			}
+		}
+		System.out.println("Lowest age is:" + lowestage);
+	}
+
+}
