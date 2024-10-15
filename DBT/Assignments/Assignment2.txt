@@ -1,0 +1,23 @@
+Name: Pranav Chandravilas Sherkar
+PRN No:- 240840320068
+
+Assignment 2
+
+1.Which field of the Customers table is the primary key?
+-->Primary key is column or group of column which uniquely indentifies each row in table,
+   In this question primary key is Cnum column in Customers table which uniquely identifies each row in table.
+
+2) What is the 4th column of the Customers table? 
+-->Rating is the 4th column of the Customers table, as columns in Customers table are:
+1. Cnum 
+2. Cname 
+3. City      
+4. Rating 
+5. Snum 		
+
+3) What is another word for row?  For column? 
+-->In a database, a row is also known as a tuple or record, and another name for a column in a database is field or attribute.
+
+4) Why isn’t it possible to see the first five rows of a table?
+-->In a DBMS, data might be stored more similarly to files, and there is often an implicit order based on the way data is inserted and physically    stored.
+In an RDBMS, tables represent unordered sets of rows, meaning the data is stored without an inherent order.so because of this the concept of the "first" five rows does not inherently apply. Rows are not physically stored in any specific order unless explicitly defined through an ORDER BY clause.
