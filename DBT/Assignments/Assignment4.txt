@@ -58,3 +58,15 @@ Assignment 4
 +--------+----------+
 
 5) Write a query that will produce the snum values of all salespeople (suppress the duplicates) with orders in the Orders table.
+-> mysql> SELECT DISTINCT Snum
+         FROM Orders;
++------+
+| Snum |
++------+
+| 1007 |
+| 1001 |
+| 1004 |
+| 1002 |
+| 1003 |
++------+
+
