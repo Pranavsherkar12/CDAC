@@ -66,9 +66,7 @@ mysql> SELECT MAX(Rating) as MaxRating,City FROM customers
 |       300 | Berlin   |
 +-----------+----------+
 
-6) Write a query that counts the number of salespeople registering orders for each 
-day. (If a salesperson has more than one order on a given day, he or she should be 
-counted only once.).
+6) Write a query that counts the number of salespeople registering orders for each day. (If a salesperson has more than one order on a given day, he or she should be counted only once.).
 -->
 mysql> SELECT Odate,COUNT(DISTINCT Snum) FROM orders
     -> GROUP BY Odate;
