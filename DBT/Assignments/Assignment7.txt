@@ -1,0 +1,82 @@
+Name: Pranav Chandravilas Sherkar
+PRN No:- 240840320068
+
+Assignment 7
+
+
+1) Write a query that counts all orders for October 3. 
+-->
+mysql> SELECT COUNT(*) FROM orders
+    -> WHERE Odate = '1990-10-03';
++----------+
+| COUNT(*) |
++----------+
+|        5 |
++----------+
+
+2) Write a query that counts the number of different non-NULL city values in the 
+Customers table. 
+-->
+mysql> SELECT COUNT(City) FROM customers
+    -> WHERE CITY is NOT NULL;
++-------------+
+| COUNT(City) |
++-------------+
+|           7 |
++-------------+
+
+3) Write a query that selects each customer’s smallest order. 
+-->
+mysql> SELECT Cnum,MIN(Amt) FROM orders
+    -> GROUP BY Cnum;
++------+----------+
+| Cnum | MIN(Amt) |
++------+----------+
+| 2008 |    18.69 |
+| 2001 |   767.19 |
+| 2007 |  1900.10 |
+| 2003 |  5160.45 |
+| 2002 |  1713.23 |
+| 2004 |    75.75 |
+| 2006 |  4723.00 |
++------+----------+
+
+
+4) Write a query that selects the first customer, in alphabetical order, whose name 
+begins with G.
+-->
+mysql> SELECT * FROM customers
+    -> WHERE Cname LIKE 'G%' LIMIT 1;
++------+----------+------+--------+------+
+| Cnum | Cname    | City | Rating | Snum |
++------+----------+------+--------+------+
+| 2002 | Giovanni | Rome |    200 | 1003 |
++------+----------+------+--------+------+
+
+5) Write a query that selects the highest rating in each city. 
+-->
+mysql> SELECT MAX(Rating) as MaxRating,City FROM customers
+    -> GROUP BY City;
++-----------+----------+
+| MaxRating | City     |
++-----------+----------+
+|       100 | London   |
+|       200 | Rome     |
+|       300 | San Jose |
+|       300 | Berlin   |
++-----------+----------+
+
+6) Write a query that counts the number of salespeople registering orders for each 
+day. (If a salesperson has more than one order on a given day, he or she should be 
+counted only once.).
+-->
+mysql> SELECT Odate,COUNT(DISTINCT Snum) FROM orders
+    -> GROUP BY Odate;
++------------+----------------------+
+| Odate      | COUNT(DISTINCT Snum) |
++------------+----------------------+
+| 1990-10-03 |                    4 |
+| 1990-10-04 |                    2 |
+| 1990-10-05 |                    1 |
+| 1990-10-06 |                    2 |
++------------+----------------------+
