@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        body #link{
+            color: white;
+        }
+
+        #main{
+            color: white;
+        }
+
+        #main strong{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p id="link">
+        [<a href="#" onmouseover="highlight()" onmouseout="returnnormal()">
+            On mouse over bold parts of the paragraph will be highlighted
+        </a>]
+    </p>
+
+    <p id="main">
+        <strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>
+
+    </p>
+
+    <script>
+        var bold_items;
+        window.onload =  getboldItems();
+        
+        function getboldItems(){
+            bold_items = document.getElementsByTagName('strong');
+        }
+
+        function highlight(){
+            for(i=0;i<bold_items.length;i++){
+                bold_items[i].style.color = "green";
+            }
+        }
+
+        function returnnormal(){
+            for(i=0;i<bold_items.length;i++){
+                bold_items[i].style.color = "black";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
