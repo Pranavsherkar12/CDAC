@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    
+    
+
+<script>
+    function fetchData(url,callback){
+        console.log(`fetching data from ${url}`);
+
+        setTimeout(()=>{
+            const isError = Math.random() > 0.5;
+        
+            if(isError){
+                console.log("Error:unable to fetch data",null);  
+            }
+            else{
+                const c = "Sample response: "+ url;
+                callback(null,c);
+            }
+        },3000)
+    }
+
+
+    function delayed(error,response){
+        if(error){
+            console.log("Error loading the url",error); 
+        }
+        else{
+            console.log("Fetch data successfully",response);
+        }    
+    }
+
+    fetchData("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js",delayed)
+
+</script>
+
+</body>
+</html>

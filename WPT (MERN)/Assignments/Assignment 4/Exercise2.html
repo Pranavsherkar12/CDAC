@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    
+    <p id="print"></p>
+
+    <script>
+
+        arr = [10,20,30,40,50]
+        function foreachElement(arr,callback){
+            for(i = 0;i<arr.length;i++){
+                callback(arr[i],i)
+            }    
+
+        }
+
+        foreachElement(arr,function(element,index){
+            console.log(`index ${index}: ${element*2}`);
+        })
+    </script>
+</body>
+</html>

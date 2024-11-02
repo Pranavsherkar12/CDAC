@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <p id="print"></p>
+
+    <script>
+      function processData(input,callback){
+        const c = callback(input);
+        document.getElementById("print").textContent = c;
+        console.log(c);
+        
+      }
+
+      function toupperCase(str){
+        return str.toUpperCase();
+      }
+
+      processData("pranav",toupperCase)
+
+    </script>
+  </body>
+</html>
